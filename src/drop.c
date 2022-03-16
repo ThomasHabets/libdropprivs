@@ -39,10 +39,10 @@ int do_setuid(uid_t uid, gid_t gid)
   if (setgroups(0, NULL) && errno != EPERM) {
     perror("setgroups(0, NULL)");
   }
-  if (setgid(uid) && errno != EPERM) {
+  if (setgid(gid) && errno != EPERM) {
     perror("setgid()");
   }
-  if (setuid(gid) && errno != EPERM) {
+  if (setuid(uid) && errno != EPERM) {
     perror("setuid()");
   }
   return 0;
