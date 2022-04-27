@@ -1,4 +1,4 @@
-# Bluetooth helper
+# libdropprivs
 
 https://github.com/ThomasHabets/libdropprivs
 
